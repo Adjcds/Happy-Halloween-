@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+*
+{
+	margin: 0;
+    padding: 0;
+    font-family: 'Fruktur', cursive;
+}
+
+/* Estilos globais */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff6600;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: 'Fruktur', cursive;
+    margin: 0;
+}
+
+
+/* Estilos para a barra de navegação */
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header p {
+	font-family: Arial, sans-serif;
+}
+
+/* Estilos para links na barra de navegação */
+nav a {
+    text-decoration: none;
+	font-family: Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    transition: color 0.3s;
+}
+
+/* Estilos para links na barra de navegação ao passar o mouse */
+nav a:hover {
+    color: rgb(255, 0, 0); /* Altere para a cor desejada (por exemplo, "red") */
+}
+
+/* Estilos para o ícone de fantasma */
+nav a:hover::before {
+    background-color: rgba(2, 19, 34, 0);
+    color: #fff;
+    font-size: 20px;
+}
+
+.banner{
+    margin-top: 230px; /* Adicione a margem superior que desejar, neste caso 20px */
+}
+button {
+    width: 200px;
+    height: 100px;
+    background: #0b061f;
+    color: #fff;
+    font-size: 1em;
+    border: 2px solid #fff;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    transition: margin-top 1s ease ;
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+}
+
+button:hover{
+    margin-top: 60px;
+    animation: animateButton 5s linear infinite;
+}
+
+button::before {
+    content: "Gostosuras ou travessuras!?";
+    position: absolute;
+    font-size: 4.5em;
+    z-index: -1;
+    -webkit-text-stroke: 2px #fff;
+    transform: scale(0) translateY(-50px); /* Valor negativo para mover o texto para cima */
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+button:hover::before {
+    transform: scale(1) translateY(-180px); /* Mova o texto para baixo durante a animação com um espaçamento de 20px */
+    opacity: 1;
+    animation: animateText 5s linear infinite;
+}
+
+@keyframes animateText {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92% {
+        color: #7d2ae8;
+        text-shadow:
+         0 0 10px #7d2ae8,
+         0 0 20px #7d2ae8,
+         0 0 40px #7d2ae8,
+         0 0 80px #7d2ae8,
+         0 0 160px #7d2ae8;
+    }
+    18.1%,20.1%,30%,50%,60%,65%,80.1%,98%,92.1%,100%{
+        color: #ffac09;
+        text-shadow:
+         0 0 10px #ffac09,
+         0 0 20px #ffac09 ,
+         0 0 40px #ffac09,
+         0 0 80px #ffac09,
+         0 0 160px #ffac09;
+    }
+}
+
+
+@keyframes animateButton {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92% {
+        background: #7d2ae8;
+        text-shadow:
+         0 0 10px #7d2ae8,
+         0 0 20px #7d2ae8,
+         0 0 40px #7d2ae8,
+         0 0 80px #7d2ae8,
+         0 0 160px #7d2ae8;
+    }
+    18.1%,20.1%,30%,50%,60%,65%,80.1%,98%,92.1%,100%{
+        background: #ffac09;
+        box-shadow:
+         0 0 10px #ffac09,
+         0 0 20px #ffac09 ,
+         0 0 40px #ffac09,
+         0 0 80px #ffac09,
+         0 0 160px #ffac09;
+    }
+}
+
+.flex {
+     background-color: rgba(240, 248, 255, 0);
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around; 
+     align-items: center;
+     margin-top: 20px;
+     gap: 20px;
+     
+}
+
+h3.titulo {
+    
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+.interfaces  { 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+.img-port {
+    width: 300px;
+    height: 350px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    box-shadow: 0 0 20px #ff000078;
+    opacity: 1;
+}
+
+/* Estilos para telas pequenas */
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column; /* Empilhar elementos verticalmente em telas pequenas */
+    }
+}
+
