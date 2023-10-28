@@ -74,7 +74,9 @@ nav a:hover::before {
 
 .banner{
     margin-top: 230px; /* Adicione a margem superior que desejar, neste caso 20px */
+
 }
+
 button {
     width: 200px;
     height: 100px;
@@ -221,3 +223,15 @@ h3.titulo {
     }
 }
 
+footer {
+    background-color: #33333300; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Alinhamento de texto */
+    padding: 30px; /* Espaçamento interno */
+}
+
+/* Estilize o seu nome */
+.developer-name {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold; /* Texto em negrito */
+}
