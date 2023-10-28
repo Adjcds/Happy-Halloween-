@@ -228,6 +228,8 @@ footer {
     color: #fff; /* Cor do texto */
     text-align: center; /* Alinhamento de texto */
     padding: 30px; /* Espaçamento interno */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+    
 }
 
 /* Estilize o seu nome */
