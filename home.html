@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Happy Halloween</title>
 		<link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="ghost.css">
 	</head>
 	<body>
 
@@ -13,123 +14,149 @@
 				<p>Bem-vindo à Celebração Assustadora</p>
 			</div>
 		</header>
+		
 		<nav>
 			<ul>
 				<li><a href="#" onclick="showSection('header-inicio')">Inicio</a></li>
+				<li><a href="#" onclick="showSection('sobre')">Sobre</a></li> <!-- Novo link para a seção sobre -->
 				<li><a href="#" onclick="showSection('comida')">Comida</a></li>
 				<li><a href="#" onclick="showSection('fantasias')">Fantasias</a></li>
 				<li><a href="#" onclick="showSection('filmes')">Filmes</a></li>
 			</ul>
 		</nav>
+        <div class="ghost">
+            <div class="eyes"></div>
+            <div class="mouth"></div>
+        </div>
 
 		<section id="header-inicio" class="banner">
 			<button>Não aperte aqui</button>
 		</section>
+  
+        
+		<main>
+			<section id="sobre">
+                <h2>O Halloween: Uma Jornada pela História e Tradição</h2>
+                <p>O Halloween, celebrado anualmente no dia 31 de outubro, é uma festa que fascina pessoas de todas as idades, com suas fantasias, mistérios e tradições. Mas o que muitas vezes não sabemos é que essa celebração remonta a séculos de história e evolução cultural. Vamos viajar no tempo e descobrir como o Halloween se transformou no que conhecemos hoje.</p>
+            
+                <h3>As Antigas Raízes Celtas: O Festival de Samhain</h3>
+                <p>A história do Halloween começa há mais de 2.000 anos com o festival celta de <strong>Samhain</strong>, comemorado nas regiões que hoje são Irlanda, Escócia, Inglaterra e França. Para os celtas, o Samhain marcava o fim do verão e o início do inverno, um período de transição que era visto como um momento em que a fronteira entre o mundo dos vivos e dos mortos se tornava mais tênue. Acreditava-se que, nessa época, os espíritos dos ancestrais retornavam para visitar suas famílias, e as pessoas ofereciam comida e presentes para apaziguá-los.</p>
+            
+                <h3>A Influência Cristã: A Mescla de Culturas</h3>
+                <p>Com a chegada do cristianismo, muitas celebrações pagãs foram absorvidas pela cultura cristã. O Samhain, por exemplo, foi adaptado pela Igreja Católica, que estabeleceu o <strong>Dia de Todos os Santos</strong> em 1º de novembro, seguido pelo <strong>Dia de Finados</strong> em 2 de novembro. Muitas tradições do Samhain, como o uso de fantasias e a oferta de presentes, sobreviveram e se misturaram a essas novas festas religiosas.</p>
+            
+                <h3>A Popularização do Halloween nos Estados Unidos</h3>
+                <p>Imigrantes irlandeses e escoceses levaram o Halloween para os Estados Unidos no século XIX, onde a festa se popularizou e foi adaptada às culturas locais. Lá, surgiram tradições como o <strong>"doces ou travessuras"</strong>, uma brincadeira que remonta a costumes medievais de pedir comida em troca de orações pelos mortos. Com o tempo, o Halloween nos Estados Unidos tornou-se um evento familiar, cheio de fantasias, decoração assustadora e atividades divertidas.</p>
+            
+                <h3>O Halloween ao Redor do Mundo</h3>
+                <p>Embora o Halloween tenha se popularizado principalmente em países de língua inglesa, outros países adotaram ou desenvolveram suas próprias tradições ao redor da data. No México, por exemplo, o <strong>Dia dos Mortos</strong> é uma festa colorida e vibrante, dedicada a honrar os falecidos, com altares decorados, oferendas e celebrações que misturam espiritualidade e alegria.</p>
+            
+                <h3>Conclusão</h3>
+                <p>Hoje, o Halloween é uma celebração que une o passado e o presente, misturando culturas e tradições ao longo dos séculos. Mais do que uma festa de bruxas e fantasmas, é uma oportunidade de refletir sobre a vida, a morte e a memória de quem veio antes de nós. É uma festa que nos convida a lembrar, celebrar e compartilhar momentos de alegria com nossas comunidades.</p>
+            </section>
+            
 
-<main>
-        <section id="comida"  class="comida">
-            <div class="interfaces">
-                <br>
-                <h3 class="titulo">Comida</h3>
-                <div class="flex">
-                    <div class="img-port" style="background-image: url(assets/e.jpg);">
-                    <a href="" target="_blank"><div class="overlay">Gelatina de Limão</div></a>
-                    </div>
-                    <div class="img-port" style="background-image: url(assets/q.jpg);">
-                    <a href="" target="_blank"><div class="overlay">Guacamole na abóbora</div></a>
-                    </div>
-                    <div class="img-port" style="background-image: url(assets/r.jpg);">
-                     <a href="" target="_blank" ><div class="overlay">Último Suspiro</div></a>
-                    </div>
-                    <div class="img-port" style="background-image: url(assets/g.jpg);">
-                    <a href="" target="_blank"><div class="overlay">Suco de Mãorango</div></a>
-                    </div>
-                    <div class="img-port" style="background-image: url(assets/w.jpg);">
-                    <a href="" target="_blank"><div class="overlay">Sanduichão</div></a>
-                    </div>
-                    <div class="img-port" style="background-image: url(assets/ç.jpg);">
-                    <a href="" target="_blank"><div class="overlay">Hot dedo</div></a>
-                    </div>
-                    <div class="img-port" style="background-image: url(assets/x.jpg);">
-                    <a href="" target="_blank"><div class="overlay">Dangorgon</div></a>
-                    </div>
-                    <div class="img-port" style="background-image: url(assets/xx.jpg);">
-                    <a href="" target="_blank"><div class="overlay">Brigapiro</div></a>
-                    </div>
-                </div>
-            </div>
-        </section>
+			<section id="comida" class="comida">
+				<div class="interfaces">
+					<h3 class="titulo">Comida</h3>
+					<div class="flex">
+						<div class="img-port" style="background-image: url(assets/e.jpg);">
+							<div class="overlay">Gelatina de Limão</div>
+						</div>
+						<div class="img-port" style="background-image: url(assets/q.jpg);">
+							<div class="overlay">Guacamole na abóbora</div>
+						</div>
+						<div class="img-port" style="background-image: url(assets/r.jpg);">
+							<div class="overlay">Último Suspiro</div>
+						</div>
+						<div class="img-port" style="background-image: url(assets/g.jpg);">
+							<div class="overlay">Suco de Mãorango</div>
+						</div>
+						<div class="img-port" style="background-image: url(assets/w.jpg);">
+							<div class="overlay">Sanduichão</div>
+						</div>
+						<div class="img-port" style="background-image: url(assets/ç.jpg);">
+							<div class="overlay">Hot dedo</div>
+						</div>
+						<div class="img-port" style="background-image: url(assets/x.jpg);">
+							<div class="overlay">Dangorgon</div>
+						</div>
+						<div class="img-port" style="background-image: url(assets/xx.jpg);">
+							<div class="overlay">Brigapiro</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
+			<section id="fantasias" class="fantasias">
+				<div class="interfaces">
+					<h3 class="titulo">Fantasias</h3>
+					<div class="flex">
+						<div class="img-port" style="background-image: url(assets/a.jpg);">
+							<div class="overlay">Minios</div>
+						</div>
+						<div class="img-port" style="background-image: url(assets/aa.jpg);">
+							<div class="overlay">Meninas Super</div>
+						</div>
+						<div class="img-port" style="background-image: url(assets/aaa.jpg);">
+							<div class="overlay">Among us</div>
+						</div>
+						<div class="img-port" style="background-image: url(assets/aaaaa.jpg);">
+							<div class="overlay">The sims</div>
+						</div>
+						<div class="img-port" style="background-image: url(assets/dddd.jpg);">
+							<div class="overlay">Coroline</div>
+						</div>
+						<div class="img-port" style="background-image: url(assets/dd.jpg);">
+							<div class="overlay">Boo</div>
+						</div>
+						<div class="img-port" style="background-image: url(assets/ddd.jpg);">
+							<div class="overlay">Ravena</div>
+						</div>
+						<div class="img-port" style="background-image: url(assets/aaaa.jpg);">
+							<div class="overlay">Thomas</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-<section id="fantasias"  class="fantasias">
-    <div class="interfaces">
-        <br>
-        <h3 class="titulo">Fantasias</h3>
-        <div class="flex">
-            <div class="img-port" style="background-image: url(assets/a.jpg);">
-            <a href="" target="_blank"><div class="overlay">Minios</div></a>
-            </div>
-            <div class="img-port" style="background-image: url(assets/aa.jpg);">
-            <a href="" target="_blank"><div class="overlay">Meninas Super</div></a>
-            </div>
-            <div class="img-port" style="background-image: url(assets/aaa.jpg);">
-             <a href="" target="_blank" ><div class="overlay">Among us</div></a>
-            </div>
-            <div class="img-port" style="background-image: url(assets/aaaaa.jpg);">
-            <a href="" target="_blank"><div class="overlay">The sims</div></a>
-            </div>
-            <div class="img-port" style="background-image: url(assets/dddd.jpg);">
-            <a href="" target="_blank"><div class="overlay">Coroline</div></a>
-            </div>
-            <div class="img-port" style="background-image: url(assets/dd.jpg);">
-            <a href="" target="_blank"><div class="overlay">Boo</div></a>
-            </div>
-            <div class="img-port" style="background-image: url(assets/ddd.jpg);">
-            <a href="" target="_blank"><div class="overlay">Ravena</div></a>
-            </div>
-            <div class="img-port" style="background-image: url(assets/aaaa.jpg);">
-            <a href="" target="_blank"><div class="overlay">Thomas</div></a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="filmes"  class="filmes">
-    <div class="interfaces">
-        <br>
-        <h3 class="titulo">Filmes</h3>
-        <div class="flex">
-            <div class="img-port" style="background-image: url(assets/qq.jpg);">
-            <a href="" target="_blank"><div class="overlay">Goosebumps</div></a>
-            </div>
-            <div class="img-port" style="background-image: url(assets/qqq.jpg);">
-            <a href="" target="_blank"><div class="overlay">Família adams</div></a>
-            </div>
-            <div class="img-port" style="background-image: url(assets/qqqq.jpg);">
-             <a href="" target="_blank" ><div class="overlay">A casa monstro</div></a>
-            </div>
-            <div class="img-port" style="background-image: url(assets/qqqqq.jpg);">
-            <a href="" target="_blank"><div class="overlay">Paranorman</div></a>
-            </div>
-            <div class="img-port" style="background-image: url(assets/rrr.jpg);">
-            <a href="" target="_blank"><div class="overlay">A Noiva-Cadáver</div></a>
-            </div>
-            <div class="img-port" style="background-image: url(assets/rrrr.jpg);">
-            <a href="" target="_blank"><div class="overlay">Coraline</div></a>
-            </div>
-            <div class="img-port" style="background-image: url(assets/ss.jpg);">
-            <a href="" target="_blank"><div class="overlay">Gremlins</div></a>
-            </div>
-            <div class="img-port" style="background-image: url(assets/s.jpg);">
-            <a href="" target="_blank"><div class="overlay">Casper</div></a>
-            </div>
-        </div>
-    </div>
-</section>
-</main>
-<footer>
-    Desenvolvido por <span class="developer-name">Adrielle Jcds</span>
-</footer>
-<script src="script.js"></script>
+			<section id="filmes" class="filmes">
+				<div class="interfaces">
+					<h3 class="titulo">Filmes</h3>
+					<div class="flex">
+						<div class="img-port" style="background-image: url(assets/qq.jpg);">
+							<div class="overlay">Goosebumps</div>
+						</div>
+						<div class="img-port" style="background-image: url(assets/qqq.jpg);">
+							<div class="overlay">Família Adams</div>
+						</div>
+						<div class="img-port" style="background-image: url(assets/qqqq.jpg);">
+							<div class="overlay">A casa monstro</div>
+						</div>
+						<div class="img-port" style="background-image: url(assets/qqqqq.jpg);">
+							<div class="overlay">Paranorman</div>
+						</div>
+						<div class="img-port" style="background-image: url(assets/rrr.jpg);">
+							<div class="overlay">A Noiva-Cadáver</div>
+						</div>
+						<div class="img-port" style="background-image: url(assets/rrrr.jpg);">
+							<div class="overlay">Coraline</div>
+						</div>
+						<div class="img-port" style="background-image: url(assets/ss.jpg);">
+							<div class="overlay">Gremlins</div>
+						</div>
+						<div class="img-port" style="background-image: url(assets/s.jpg);">
+							<div class="overlay">Casper</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		
+		<footer>
+			Desenvolvido por <span class="developer-name">Adrielle Jcds</span>
+		</footer>
+        <script src="ghost.js"></script>
+		<script src="script.js"></script>
 	</body>
 </html>

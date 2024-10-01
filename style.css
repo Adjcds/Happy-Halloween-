@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
-*
-{
-	margin: 0;
+
+/* Reset de margens e paddings */
+* {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Inclui padding e border na largura total */
     font-family: 'Fruktur', cursive;
 }
 
@@ -28,7 +30,6 @@ h1 {
     margin: 0;
 }
 
-
 /* Estilos para a barra de navegação */
 nav {
     background-color: #333;
@@ -48,21 +49,57 @@ nav li {
 }
 
 header p {
-	font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para a barra de navegação */
+nav {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(255, 0, 0, 0.6)); /* Gradiente de fundo */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Para usar elementos posicionados absolutamente */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
 }
 
 /* Estilos para links na barra de navegação */
 nav a {
     text-decoration: none;
-	font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
     color: #fff;
     position: relative;
     transition: color 0.3s;
 }
 
+/* Adicionando o efeito de sangue nos links */
+nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px; /* Altura da "mancha de sangue" */
+    background: rgba(255, 0, 0, 0.7); /* Cor do "sangue" */
+    left: 0;
+    bottom: -5px; /* Posiciona abaixo do link */
+    transform: scaleX(0); /* Inicialmente invisível */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+nav a:hover::before {
+    transform: scaleX(1); /* Expande para o tamanho do link quando o mouse passa */
+}
+
 /* Estilos para links na barra de navegação ao passar o mouse */
 nav a:hover {
-    color: rgb(255, 0, 0); /* Altere para a cor desejada (por exemplo, "red") */
+    color: rgb(255, 0, 0); /* Muda a cor do texto */
 }
 
 /* Estilos para o ícone de fantasma */
@@ -72,11 +109,12 @@ nav a:hover::before {
     font-size: 20px;
 }
 
-.banner{
-    margin-top: 230px; /* Adicione a margem superior que desejar, neste caso 20px */
-
+/* Estilos para o banner */
+.banner {
+    margin-top: 230px;
 }
 
+/* Estilos para o botão */
 button {
     width: 200px;
     height: 100px;
@@ -88,12 +126,12 @@ button {
     cursor: pointer;
     display: flex;
     justify-content: center;
-    align-items: center ;
-    transition: margin-top 1s ease ;
+    align-items: center;
+    transition: margin-top 1s ease;
     margin: 0 auto; /* Centraliza o botão horizontalmente */
 }
 
-button:hover{
+button:hover {
     margin-top: 60px;
     animation: animateButton 5s linear infinite;
 }
@@ -104,84 +142,85 @@ button::before {
     font-size: 4.5em;
     z-index: -1;
     -webkit-text-stroke: 2px #fff;
-    transform: scale(0) translateY(-50px); /* Valor negativo para mover o texto para cima */
+    transform: scale(0) translateY(-50px);
     opacity: 0;
     transition: transform 1s ease, opacity 1s ease;
 }
 
 button:hover::before {
-    transform: scale(1) translateY(-180px); /* Mova o texto para baixo durante a animação com um espaçamento de 20px */
+    transform: scale(1) translateY(-180px);
     opacity: 1;
     animation: animateText 5s linear infinite;
 }
 
+/* Animação do texto do botão */
 @keyframes animateText {
-    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92% {
-        color: #7d2ae8;
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+        color: #ff000d;
         text-shadow:
-         0 0 10px #7d2ae8,
-         0 0 20px #7d2ae8,
-         0 0 40px #7d2ae8,
-         0 0 80px #7d2ae8,
-         0 0 160px #7d2ae8;
+         0 0 10px #ff000d,
+         0 0 20px #ff000d,
+         0 0 40px #ff000d,
+         0 0 80px #ff000d,
+         0 0 160px #ff000d;
     }
-    18.1%,20.1%,30%,50%,60%,65%,80.1%,98%,92.1%,100%{
+    18.1%, 20.1%, 30%, 50%, 60%, 65%, 80.1%, 98%, 92.1%, 100% {
         color: #ffac09;
         text-shadow:
          0 0 10px #ffac09,
-         0 0 20px #ffac09 ,
+         0 0 20px #ffac09,
          0 0 40px #ffac09,
          0 0 80px #ffac09,
          0 0 160px #ffac09;
     }
 }
 
-
+/* Animação do botão */
 @keyframes animateButton {
-    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92% {
-        background: #7d2ae8;
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+        background: #ff000d;
         text-shadow:
-         0 0 10px #7d2ae8,
-         0 0 20px #7d2ae8,
-         0 0 40px #7d2ae8,
-         0 0 80px #7d2ae8,
-         0 0 160px #7d2ae8;
+         0 0 10px #ff000d,
+         0 0 20px #ff000d,
+         0 0 40px #ff000d,
+         0 0 80px #ff000d,
+         0 0 160px #ff000d;
     }
-    18.1%,20.1%,30%,50%,60%,65%,80.1%,98%,92.1%,100%{
+    18.1%, 20.1%, 30%, 50%, 60%, 65%, 80.1%, 98%, 92.1%, 100% {
         background: #ffac09;
         box-shadow:
          0 0 10px #ffac09,
-         0 0 20px #ffac09 ,
+         0 0 20px #ffac09,
          0 0 40px #ffac09,
          0 0 80px #ffac09,
          0 0 160px #ffac09;
     }
 }
 
+/* Flexbox para layout responsivo */
 .flex {
-     background-color: rgba(240, 248, 255, 0);
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-around; 
-     align-items: center;
-     margin-top: 20px;
-     gap: 20px;
-     
+    background-color: rgba(240, 248, 255, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px; /* Espaçamento entre os itens */
 }
 
+/* Estilos para os títulos */
 h3.titulo {
-    
     color: #fff;
     font-size: 38px;
     text-align: center;
 }
 
-.interfaces  { 
+.interfaces {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
-
+/* Estilos para imagens do portfólio */
 .img-port {
     width: 300px;
     height: 350px;
@@ -220,20 +259,69 @@ h3.titulo {
 @media (max-width: 768px) {
     .flex {
         flex-direction: column; /* Empilhar elementos verticalmente em telas pequenas */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    button {
+        width: 150px; /* Ajusta a largura do botão */
+        height: 80px; /* Ajusta a altura do botão */
+        font-size: 0.9em; /* Reduz o tamanho da fonte */
+    }
+
+    .img-port {
+        width: 90%; /* Faz a imagem do portfólio ocupar 90% da largura da tela */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    h3.titulo {
+        font-size: 28px; /* Reduz o tamanho da fonte para títulos em telas pequenas */
     }
 }
 
+/* Estilos para o rodapé */
 footer {
     background-color: #33333300; /* Cor de fundo */
     color: #fff; /* Cor do texto */
     text-align: center; /* Alinhamento de texto */
     padding: 30px; /* Espaçamento interno */
     margin: 0 auto; /* Centraliza o botão horizontalmente */
-    
 }
 
-/* Estilize o seu nome */
+/* Estilo para o nome do desenvolvedor */
 .developer-name {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilos para a seção sobre */
+#sobre {
+    background-color: #000000; /* Fundo escuro e misterioso */
+    color: #f4f4f9; /* Texto claro para contraste */
+    padding: 40px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 39px rgba(250, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif;
+}
+
+#sobre h2 {
+    color: #ff1818; /* Laranja vibrante para o título */
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+#sobre h3 {
+    color: #ff7b00; /* Um tom de amarelo suave para subtítulos */
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#sobre p {
+    line-height: 1.6; /* Melhor legibilidade */
+    margin-bottom: 20px;
 }
