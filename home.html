@@ -5,35 +5,29 @@
 		<title>Happy Halloween</title>
 		<link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="ghost.css">
+		<link href="https://fonts.googleapis.com/css2?family=Ruge+Boogie&display=swap" rel="stylesheet">
 	</head>
 	<body>
-
 		<header>
 			<div id="inicio" class="header-content">
-				<h1>Happy Halloween!</h1>
-				<p>Bem-vindo à Celebração Assustadora</p>
+				<h1>🎃 Happy Halloween! 🎃</h1>
+				<p>⚰️ Bem-vindo(a) à Celebração Assustadora!! 🧟</p>
 			</div>
 		</header>
-		
 		<nav>
 			<ul>
 				<li><a href="#" onclick="showSection('header-inicio')">Inicio</a></li>
-				<li><a href="#" onclick="showSection('sobre')">Sobre</a></li> <!-- Novo link para a seção sobre -->
-				<li><a href="#" onclick="showSection('comida')">Comida</a></li>
-				<li><a href="#" onclick="showSection('fantasias')">Fantasias</a></li>
-				<li><a href="#" onclick="showSection('filmes')">Filmes</a></li>
+				<li><a href="#" onclick="showSection('sobre')">Sobre</a></li> 
+				<li><a href="#" onclick="showSection('diversao')">Diversão</a></li>
 			</ul>
 		</nav>
         <div class="ghost">
             <div class="eyes"></div>
             <div class="mouth"></div>
         </div>
-
 		<section id="header-inicio" class="banner">
 			<button>Não aperte aqui</button>
 		</section>
-  
-        
 		<main>
 			<section id="sobre">
                 <h2>O Halloween: Uma Jornada pela História e Tradição</h2>
@@ -54,105 +48,62 @@
                 <h3>Conclusão</h3>
                 <p>Hoje, o Halloween é uma celebração que une o passado e o presente, misturando culturas e tradições ao longo dos séculos. Mais do que uma festa de bruxas e fantasmas, é uma oportunidade de refletir sobre a vida, a morte e a memória de quem veio antes de nós. É uma festa que nos convida a lembrar, celebrar e compartilhar momentos de alegria com nossas comunidades.</p>
             </section>
-            
-
-			<section id="comida" class="comida">
+        
+			
+			<section id="diversao" class="diversao">
 				<div class="interfaces">
-					<h3 class="titulo">Comida</h3>
-					<div class="flex">
-						<div class="img-port" style="background-image: url(assets/e.jpg);">
-							<div class="overlay">Gelatina de Limão</div>
+					<h2 class="titulo">Diversão de <span>Halloween</span></h2>
+					<br>
+					<p>Explore ideias de comidas, fantasias e filmes para sua celebração de Halloween!</p>
+					
+					<div class="flexis">
+						<div class="card-projeto">
+							<div class="imagens" style="background-image: url(assets/gelatina-limao.jpg);"></div>
+							<div class="container-info">
+								<h3>Gelatina de Limão</h3>
+								<p>Uma sobremesa refrescante com um toque assustador!</p>
+							</div>
 						</div>
-						<div class="img-port" style="background-image: url(assets/q.jpg);">
-							<div class="overlay">Guacamole na abóbora</div>
+						<div class="card-projeto">
+							<div class="imagens" style="background-image: url(assets/guacamole-abobora.jpg);"></div>
+							<div class="container-info">
+								<h3>Guacamole na Abóbora</h3>
+								<p>Um lanche delicioso e criativo para a festa!</p>
+							</div>
 						</div>
-						<div class="img-port" style="background-image: url(assets/r.jpg);">
-							<div class="overlay">Último Suspiro</div>
+						<div class="card-projeto">
+							<div class="imagens" style="background-image: url(assets/ultimo-suspiro.jpg);"></div>
+							<div class="container-info">
+								<h3>Último Suspiro</h3>
+								<p>Um coquetel aterrorizante que impressiona!</p>
+							</div>
 						</div>
-						<div class="img-port" style="background-image: url(assets/g.jpg);">
-							<div class="overlay">Suco de Mãorango</div>
+						<div class="card-projeto">
+							<div class="imagens" style="background-image: url(assets/fantasias.jpg);"></div>
+							<div class="container-info">
+								<h3>Fantasias de Minios</h3>
+								<p>Uma fantasia divertida para grupos!</p>
+							</div>
 						</div>
-						<div class="img-port" style="background-image: url(assets/w.jpg);">
-							<div class="overlay">Sanduichão</div>
+						<div class="card-projeto">
+							<div class="imagens" style="background-image: url(assets/goosebumps.jpg);"></div>
+							<div class="container-info">
+								<h3>Filme: Goosebumps</h3>
+								<p>Um clássico do terror para toda a família!</p>
+							</div>
 						</div>
-						<div class="img-port" style="background-image: url(assets/ç.jpg);">
-							<div class="overlay">Hot dedo</div>
-						</div>
-						<div class="img-port" style="background-image: url(assets/x.jpg);">
-							<div class="overlay">Dangorgon</div>
-						</div>
-						<div class="img-port" style="background-image: url(assets/xx.jpg);">
-							<div class="overlay">Brigapiro</div>
+						<div class="card-projeto">
+							<div class="imagens" style="background-image: url(assets/familia-adams.jpg);"></div>
+							<div class="container-info">
+								<h3>Filme: A Família Adams</h3>
+								<p>Uma comédia de terror que nunca sai de moda!</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-
-			<section id="fantasias" class="fantasias">
-				<div class="interfaces">
-					<h3 class="titulo">Fantasias</h3>
-					<div class="flex">
-						<div class="img-port" style="background-image: url(assets/a.jpg);">
-							<div class="overlay">Minios</div>
-						</div>
-						<div class="img-port" style="background-image: url(assets/aa.jpg);">
-							<div class="overlay">Meninas Super</div>
-						</div>
-						<div class="img-port" style="background-image: url(assets/aaa.jpg);">
-							<div class="overlay">Among us</div>
-						</div>
-						<div class="img-port" style="background-image: url(assets/aaaaa.jpg);">
-							<div class="overlay">The sims</div>
-						</div>
-						<div class="img-port" style="background-image: url(assets/dddd.jpg);">
-							<div class="overlay">Coroline</div>
-						</div>
-						<div class="img-port" style="background-image: url(assets/dd.jpg);">
-							<div class="overlay">Boo</div>
-						</div>
-						<div class="img-port" style="background-image: url(assets/ddd.jpg);">
-							<div class="overlay">Ravena</div>
-						</div>
-						<div class="img-port" style="background-image: url(assets/aaaa.jpg);">
-							<div class="overlay">Thomas</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="filmes" class="filmes">
-				<div class="interfaces">
-					<h3 class="titulo">Filmes</h3>
-					<div class="flex">
-						<div class="img-port" style="background-image: url(assets/qq.jpg);">
-							<div class="overlay">Goosebumps</div>
-						</div>
-						<div class="img-port" style="background-image: url(assets/qqq.jpg);">
-							<div class="overlay">Família Adams</div>
-						</div>
-						<div class="img-port" style="background-image: url(assets/qqqq.jpg);">
-							<div class="overlay">A casa monstro</div>
-						</div>
-						<div class="img-port" style="background-image: url(assets/qqqqq.jpg);">
-							<div class="overlay">Paranorman</div>
-						</div>
-						<div class="img-port" style="background-image: url(assets/rrr.jpg);">
-							<div class="overlay">A Noiva-Cadáver</div>
-						</div>
-						<div class="img-port" style="background-image: url(assets/rrrr.jpg);">
-							<div class="overlay">Coraline</div>
-						</div>
-						<div class="img-port" style="background-image: url(assets/ss.jpg);">
-							<div class="overlay">Gremlins</div>
-						</div>
-						<div class="img-port" style="background-image: url(assets/s.jpg);">
-							<div class="overlay">Casper</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
-		
+			
+			
 		<footer>
 			Desenvolvido por <span class="developer-name">Adrielle Jcds</span>
 		</footer>

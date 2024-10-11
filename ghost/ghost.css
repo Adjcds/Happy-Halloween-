@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    background-color: #000000; /* Cor de fundo do cenário */
+}
+
+.ghost {
+    position: fixed; /* Fixado na tela */
+    top: calc(100px + 20px); /* Ajuste para posicioná-lo abaixo da nav */
+    left: 5%; /* Centraliza o fantasma horizontalmente */
+    transform: translateX(-50%); /* Ajusta para centralização */
+    width: 50px;
+    height: 70px;
+    background: #ffffff;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    animation: float 1.5s ease-in-out infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.eyes {
+    width: 30px; /* Largura total dos olhos */
+    height: 15px; /* Altura dos olhos */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 15px; /* Distância do topo */
+}
+
+.eyes::before, .eyes::after {
+    content: '';
+    width: 13px; /* Diâmetro dos olhos */
+    height: 10px; /* Diâmetro dos olhos */
+    background: #000; /* Cor dos olhos */
+    border-radius: 50%; /* Olhos redondos */
+}
+
+.mouth {
+    width: 22px; /* Largura da boca */
+    height: 10px; /* Altura da boca */
+    background: #000; /* Cor da boca */
+    border-radius: 0 0 10px 10px; /* Cantos arredondados da boca */
+    position: relative;
+    top: 13px; /* Distância do fundo do corpo */
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
