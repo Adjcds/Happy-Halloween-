@@ -59,6 +59,12 @@ nav a {
     transition: color 0.3s;
 }
 
+p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #5e5e5e;
+    
+}
+
 nav li{
     font-size: 28px;
 }
